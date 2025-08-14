@@ -1,0 +1,42 @@
+<mvc:View
+    controllerName="armoryx.armoryx.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+    <Page showHeader="false" class="sapUiContentPadding">
+        <VBox
+            class="sapUiResponsiveMargin"
+            justifyContent="Center"
+            alignItems="Center"
+            height="100%">
+            <core:Icon src="sap-icon://shield" size="3rem" class="sapUiMediumMarginBottom" color="#346187"/>
+            <Title text="ArmoryX Operator Login" titleStyle="H2" class="sapUiMediumMarginBottom"/>
+
+            <f:SimpleForm layout="ResponsiveGridLayout" editable="true" width="22rem">
+                <Label text="Username" required="true"/>
+                <Input id="usernameInput" placeholder="Enter your username..." liveChange=".onInputChange"/>
+
+                <Label text="Password" required="true"/>
+                <Input id="passwordInput" type="Password" placeholder="Enter your password..." liveChange=".onInputChange"/>
+
+                <CheckBox id="rememberMeCheckbox" text="Remember Me" class="sapUiSmallMarginTop"/>
+                <Link text="Forgot Password?" press=".onForgotPassword" class="sapUiSmallMarginTop" textAlign="End"/>
+
+                <Button
+                    id="loginButton"
+                    text="Login"
+                    type="Emphasized"
+                    press=".onLogin"
+                    class="sapUiLargeMarginTop"
+                    enabled="false"/>
+            </f:SimpleForm>
+
+            <VBox class="sapUiLargeMarginTop" alignItems="Center">
+                 <Text text="Don't have an account?"/>
+                 <Button text="Sign Up Now" type="Transparent" press=".onNavToSignUp"/>
+            </VBox>
+        </VBox>
+    </Page>
+</mvc:View>

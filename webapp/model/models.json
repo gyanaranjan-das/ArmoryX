@@ -1,0 +1,1672 @@
+{
+    "weapons": [
+        {
+            "id": "AK47",
+            "name": "AK-47",
+            "fullName": "Avtomat Kalashnikova model 1947",
+            "category": "Small Arms",
+            "subCategory": "Assault Rifle",
+            "manufacturer": "Kalashnikov Concern",
+            "countryOfOrigin": "Soviet Union",
+            "yearIntroduced": 1947,
+            "status": "Active",
+            "specifications": {
+                "caliber": "7.62×39mm",
+                "effectiveRange": 350,
+                "maxRange": 800,
+                "rateOfFire": 600,
+                "muzzleVelocity": 715,
+                "weight": 4.3,
+                "length": 870,
+                "magazineCapacity": 30
+            },
+            "variants": [
+                "AK-74",
+                "AK-103",
+                "AK-12"
+            ],
+            "usedBy": [
+                "Russia",
+                "China",
+                "Vietnam",
+                "Cuba"
+            ],
+            "description": "Reliable and rugged assault rifle, one of the most widely used weapons in history",
+            "image": "/images/ak47.jpg",
+            "tags": [
+                "automatic",
+                "selective-fire",
+                "gas-operated"
+            ],
+            "cost": {
+                "unitPrice": 700,
+                "currency": "USD"
+            },
+            "reliability": 9.5,
+            "maintenance": "Low"
+        },
+        {
+            "id": "M4A1",
+            "name": "M4A1",
+            "fullName": "M4A1",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "5.56x45mm NATO",
+                "effectiveRange": 500,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/m4a1.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "G36",
+            "name": "G36",
+            "fullName": "G36",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Germany",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "5.56x45mm NATO",
+                "effectiveRange": 800,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Germany"
+            ],
+            "description": "",
+            "image": "/images/g36.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "MP5",
+            "name": "MP5",
+            "fullName": "MP5",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Germany",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "9x19mm",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Germany"
+            ],
+            "description": "",
+            "image": "/images/mp5.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "UMP",
+            "name": "UMP",
+            "fullName": "UMP",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Germany",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": ".45 ACP",
+                "effectiveRange": 100,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Germany"
+            ],
+            "description": "",
+            "image": "/images/ump.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "P90",
+            "name": "P90",
+            "fullName": "P90",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Belgium",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "5.7x28mm",
+                "effectiveRange": 200,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Belgium"
+            ],
+            "description": "",
+            "image": "/images/p90.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "BARRETTM82",
+            "name": "Barrett M82",
+            "fullName": "Barrett M82",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": ".50 BMG",
+                "effectiveRange": 1800,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/barrettm82.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "CHEYTACM200",
+            "name": "CheyTac M200",
+            "fullName": "CheyTac M200",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": ".408 CheyTac",
+                "effectiveRange": 2500,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/cheytacm200.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "GLOCK17",
+            "name": "Glock 17",
+            "fullName": "Glock 17",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Austria",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "9x19mm",
+                "effectiveRange": 50,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Austria"
+            ],
+            "description": "",
+            "image": "/images/glock17.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "BERETTAM9",
+            "name": "Beretta M9",
+            "fullName": "Beretta M9",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Italy/USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "9x19mm",
+                "effectiveRange": 50,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Italy/USA"
+            ],
+            "description": "",
+            "image": "/images/berettam9.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "SIGP320",
+            "name": "SIG P320",
+            "fullName": "SIG P320",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Switzerland/USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "9x19mm",
+                "effectiveRange": 50,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Switzerland/USA"
+            ],
+            "description": "",
+            "image": "/images/sigp320.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "M249SAW",
+            "name": "M249 SAW",
+            "fullName": "M249 SAW",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "5.56x45mm",
+                "effectiveRange": 800,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/m249saw.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "PKM",
+            "name": "PKM",
+            "fullName": "PKM",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "7.62x54mmR",
+                "effectiveRange": 1000,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/pkm.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "MG42",
+            "name": "MG42",
+            "fullName": "MG42",
+            "category": "Small Arms",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Germany",
+            "yearIntroduced": null,
+            "status": "Retired",
+            "specifications": {
+                "caliber": "7.92x57mm",
+                "effectiveRange": 1200,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Germany"
+            ],
+            "description": "",
+            "image": "/images/mg42.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "M777HOWITZER",
+            "name": "M777 Howitzer",
+            "fullName": "M777 Howitzer",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA/UK",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "155mm",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA/UK"
+            ],
+            "description": "",
+            "image": "/images/m777howitzer.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "KATYUSHA",
+            "name": "Katyusha",
+            "fullName": "Katyusha",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Rocket launcher",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/katyusha.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "RPG7",
+            "name": "RPG-7",
+            "fullName": "Rocket Propelled Grenade-7",
+            "category": "Heavy Weapons",
+            "subCategory": "Anti-Tank",
+            "manufacturer": "Bazalt",
+            "countryOfOrigin": "Soviet Union",
+            "yearIntroduced": 1961,
+            "status": "Active",
+            "specifications": {
+                "caliber": "40mm launcher, various warheads",
+                "effectiveRange": 300,
+                "maxRange": 920,
+                "weight": 6.3,
+                "length": 950,
+                "penetration": 500
+            },
+            "variants": [
+                "RPG-7V",
+                "RPG-7V2",
+                "RPG-29"
+            ],
+            "usedBy": [
+                "Russia",
+                "Middle East",
+                "Africa"
+            ],
+            "description": "Shoulder-fired anti-tank weapon, widely proliferated globally",
+            "image": "/images/rpg7.jpg",
+            "tags": [
+                "anti-armor",
+                "portable",
+                "reusable"
+            ],
+            "cost": {
+                "unitPrice": 500,
+                "currency": "USD"
+            },
+            "reliability": 8.0,
+            "maintenance": "Low"
+        },
+        {
+            "id": "JAVELIN",
+            "name": "Javelin",
+            "fullName": "Javelin",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Guided missile",
+                "effectiveRange": 2500,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/javelin.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "TOW",
+            "name": "TOW",
+            "fullName": "TOW",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Wire-guided missile",
+                "effectiveRange": 3750,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/tow.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "STINGER",
+            "name": "Stinger",
+            "fullName": "Stinger",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "MANPADS missile",
+                "effectiveRange": 4800,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/stinger.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "S-400",
+            "name": "S-400",
+            "fullName": "S-400",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Surface-to-air missile",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/s-400.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "PATRIOT",
+            "name": "Patriot",
+            "fullName": "Patriot",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Surface-to-air missile",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/patriot.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "M224",
+            "name": "M224",
+            "fullName": "M224",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "60mm",
+                "effectiveRange": 3500,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/m224.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "2B14PODNOS",
+            "name": "2B14 Podnos",
+            "fullName": "2B14 Podnos",
+            "category": "Heavy Weapons",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "82mm",
+                "effectiveRange": 4000,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/2b14podnos.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "M67",
+            "name": "M67",
+            "fullName": "M67",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Fragmentation",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/m67.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "F1",
+            "name": "F1",
+            "fullName": "F1",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Australia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Fragmentation",
+                "effectiveRange": 30,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Australia"
+            ],
+            "description": "",
+            "image": "/images/f1.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "MK3A2",
+            "name": "MK3A2",
+            "fullName": "MK3A2",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Concussion",
+                "effectiveRange": 20,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/mk3a2.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "M18A1CLAYMORE",
+            "name": "M18A1 Claymore",
+            "fullName": "M18A1 Claymore",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Directional anti-personnel",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/m18a1claymore.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "TM-62M",
+            "name": "TM-62M",
+            "fullName": "TM-62M",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Anti-tank",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/tm-62m.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "TOMAHAWK",
+            "name": "Tomahawk",
+            "fullName": "Tomahawk",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Cruise missile",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/tomahawk.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "SCUD",
+            "name": "Scud",
+            "fullName": "Scud",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Ballistic missile",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/scud.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "JDAM",
+            "name": "JDAM",
+            "fullName": "JDAM",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Guided bomb kit",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null,
+                "penetration": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/jdam.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "FAB-500",
+            "name": "FAB-500",
+            "fullName": "FAB-500",
+            "category": "Explosives & Ordnance",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "General-purpose",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/fab-500.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "KA-BAR",
+            "name": "Ka-Bar",
+            "fullName": "Ka-Bar",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Knife",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/ka-bar.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "AKBAYONET",
+            "name": "AK Bayonet",
+            "fullName": "AK Bayonet",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Russia",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Bayonet",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Russia"
+            ],
+            "description": "",
+            "image": "/images/akbayonet.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "ASPBATON",
+            "name": "ASP Baton",
+            "fullName": "ASP Baton",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Expandable baton",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/aspbaton.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "RIOTSHIELD",
+            "name": "Riot Shield",
+            "fullName": "Riot Shield",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Various",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Defensive shield",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Various"
+            ],
+            "description": "",
+            "image": "/images/riotshield.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "TASER",
+            "name": "Taser",
+            "fullName": "Taser",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Electroshock",
+                "effectiveRange": 10,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/taser.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "PEPPERSPRAY",
+            "name": "Pepper Spray",
+            "fullName": "Pepper Spray",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Various",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Chemical irritant",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Various"
+            ],
+            "description": "",
+            "image": "/images/pepperspray.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "RUBBERBULLETS",
+            "name": "Rubber Bullets",
+            "fullName": "Rubber Bullets",
+            "category": "Melee & Non-Lethal",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Various",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Kinetic projectile",
+                "effectiveRange": 50,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Various"
+            ],
+            "description": "",
+            "image": "/images/rubberbullets.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "ACOG",
+            "name": "ACOG",
+            "fullName": "ACOG",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "4x scope",
+                "effectiveRange": 800,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/acog.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "EOTECH",
+            "name": "EOTech",
+            "fullName": "EOTech",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Holographic sight",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/eotech.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "NIGHTVISION",
+            "name": "Night Vision",
+            "fullName": "Night Vision",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Gen 3+ goggles",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/nightvision.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "TACTICALRADIOS",
+            "name": "Tactical Radios",
+            "fullName": "Tactical Radios",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Various",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Encrypted network",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Various"
+            ],
+            "description": "",
+            "image": "/images/tacticalradios.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "KEVLAR",
+            "name": "Kevlar",
+            "fullName": "Kevlar",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "USA",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Ballistic vest",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "USA"
+            ],
+            "description": "",
+            "image": "/images/kevlar.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        },
+        {
+            "id": "CERAMICPLATES",
+            "name": "Ceramic Plates",
+            "fullName": "Ceramic Plates",
+            "category": "Support Systems",
+            "subCategory": "",
+            "manufacturer": "",
+            "countryOfOrigin": "Various",
+            "yearIntroduced": null,
+            "status": "Active",
+            "specifications": {
+                "caliber": "Insert plates",
+                "effectiveRange": null,
+                "maxRange": null,
+                "rateOfFire": null,
+                "muzzleVelocity": null,
+                "weight": null,
+                "length": null,
+                "magazineCapacity": null
+            },
+            "variants": [],
+            "usedBy": [
+                "Various"
+            ],
+            "description": "",
+            "image": "/images/ceramicplates.jpg",
+            "tags": [],
+            "cost": {
+                "unitPrice": null,
+                "currency": "USD"
+            },
+            "reliability": null,
+            "maintenance": ""
+        }
+    ],
+    "categories": [
+        {
+            "id": "heavy-weapons",
+            "name": "Heavy Weapons",
+            "description": "Crew-served and vehicle-mounted systems",
+            "icon": "sap-icon://cargo-train",
+            "color": "#d04343"
+        },
+        {
+            "id": "explosives-and-ordnance",
+            "name": "Explosives & Ordnance",
+            "description": "",
+            "icon": "sap-icon://alert",
+            "color": "#000000"
+        },
+        {
+            "id": "melee-and-non-lethal",
+            "name": "Melee & Non-Lethal",
+            "description": "",
+            "icon": "sap-icon://alert",
+            "color": "#000000"
+        },
+        {
+            "id": "small-arms",
+            "name": "Small Arms",
+            "description": "Individual soldier weapons",
+            "icon": "sap-icon://product",
+            "color": "#1f7c1f"
+        },
+        {
+            "id": "support-systems",
+            "name": "Support Systems",
+            "description": "",
+            "icon": "sap-icon://alert",
+            "color": "#000000"
+        }
+    ],
+    "countries": [
+        {
+            "code": "US",
+            "name": "United States",
+            "flag": "🇺🇸",
+            "weaponsCount": 245
+        },
+        {
+            "code": "RU",
+            "name": "Russia",
+            "flag": "🇷🇺",
+            "weaponsCount": 198
+        }
+    ],
+    "filters": {
+        "eras": [
+            "WWII",
+            "Cold War",
+            "Modern",
+            "Contemporary"
+        ],
+        "status": [
+            "Active",
+            "Retired",
+            "Prototype",
+            "Discontinued"
+        ],
+        "reliability": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    }
+}
