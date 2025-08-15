@@ -1,42 +1,72 @@
+/*
+================================================================================
+| File: webapp/controller/Home.controller.js (Login Page)                      |
+| Purpose: Handles user login by checking credentials against browser storage. |
+================================================================================
+*/
 sap.ui.define([
-  "sap/ui/core/mvc/Controller",
-  "sap/m/MessageToast"
-], function (Controller, MessageToast) {
-  "use strict";
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast",
+    "sap/m/MessageBox"
+], function (Controller, MessageToast, MessageBox) {
+    "use strict";
 
-  return Controller.extend("armoryx.armoryx.controller.Home", {
+    return Controller.extend("armoryx.controller.Home", {
 
-      onLogin: function () {
-          const sUsername = this.byId("usernameInput").getValue();
-          const bRememberMe = this.byId("rememberMeCheckbox").getSelected();
+        /**
+         * Handles the login process when the user clicks "Login".
+         */
+        onLogin: function () {
+            const sUsername = this.byId("usernameInput").getValue(); // Using email as username
+            const sPassword = this.byId("passwordInput").getValue();
 
-          let sMessage = "Welcome, " + sUsername + ".";
-          if (bRememberMe) {
-              sMessage += " Your session will be remembered.";
-          }
-          MessageToast.show(sMessage);
+            // 1. GET DATA: Retrieve the list of users from localStorage.
+            const aUsers = JSON.parse(localStorage.getItem("armoryxUsers") || "[]");
 
-          const oRouter = this.getOwnerComponent().getRouter();
-          oRouter.navTo("RouteDashboard");
-      },
+            // 2. CHECK DATA: Find a user whose email and password match the input.
+            const oUser = aUsers.find(user => user.email === sUsername && user.password === sPassword);
 
-      onInputChange: function () {
-          const oUsernameInput = this.byId("usernameInput");
-          const oPasswordInput = this.byId("passwordInput");
-          const oLoginButton = this.byId("loginButton");
+            if (oUser) {
+                // 3. SUCCESS: If user is found, show a success popup and navigate.
+                MessageBox.success("Login Successful!", {
+                    title: "Welcome Back!",
+                    onClose: () => {
+                        // Navigate to the dashboard after the user closes the popup
+                        const oRouter = this.getOwnerComponent().getRouter();
+                        oRouter.navTo("RouteDashboard");
+                    }
+                });
+            } else {
+                // 4. FAILURE: If user is not found, show an error message.
+                MessageBox.error("Login Failed. Please check your username and password.");
+            }
+        },
 
-          const bInputsFilled = oUsernameInput.getValue() && oPasswordInput.getValue();
-          oLoginButton.setEnabled(bInputsFilled);
-      },
+        /**
+         * Enables the login button only when both input fields have text.
+         */
+        onInputChange: function () {
+            const oUsernameInput = this.byId("usernameInput");
+            const oPasswordInput = this.byId("passwordInput");
+            const oLoginButton = this.byId("loginButton");
 
-      onForgotPassword: function () {
-          // In a real app, this would open a dialog or navigate to a password reset page.
-          MessageToast.show("Password reset instructions have been sent to your email.");
-      },
+            const bInputsFilled = oUsernameInput.getValue() && oPasswordInput.getValue();
+            oLoginButton.setEnabled(bInputsFilled);
+        },
 
-      onNavToSignUp: function () {
-          const oRouter = this.getOwnerComponent().getRouter();
-          oRouter.navTo("RouteSignUp"); // Navigate to the new sign-up route
-      }
-  });
+        /**
+         * Navigates to the sign-up page.
+         */
+        onNavToSignUp: function () {
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("RouteSignUp");
+        },
+        
+        /**
+         * Placeholder for forgot password functionality.
+         */
+        onForgotPassword: function () {
+            MessageToast.show("Password reset instructions have been sent to your email.");
+        }
+    });
 });

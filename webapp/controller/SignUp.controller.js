@@ -1,12 +1,22 @@
+/*
+================================================================================
+| File: webapp/controller/SignUp.controller.js                                 |
+| Purpose: Handles new user registration and saves data to browser storage.    |
+================================================================================
+*/
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/core/ValueState",
-    "sap/m/MessageToast"
-], function (Controller, ValueState, MessageToast) {
+    "sap/m/MessageToast",
+    "sap/m/MessageBox"
+], function (Controller, ValueState, MessageToast, MessageBox) {
     "use strict";
 
-    return Controller.extend("armoryx.armoryx.controller.SignUp", {
+    return Controller.extend("armoryx.controller.SignUp", {
 
+        /**
+         * Real-time validation for password confirmation.
+         */
         onPasswordChange: function () {
             const oPasswordInput = this.byId("passwordInput");
             const oConfirmPasswordInput = this.byId("confirmPasswordInput");
@@ -30,15 +40,47 @@ sap.ui.define([
             }
         },
 
+        /**
+         * Handles the registration process when the user clicks "Register".
+         */
         onRegister: function () {
-            // This function is only callable if the button is enabled
+            const sEmail = this.byId("emailInput").getValue();
+            const sPassword = this.byId("passwordInput").getValue();
+
+            // Basic validation
+            if (!sEmail || !sPassword) {
+                MessageToast.show("Please fill in all fields.");
+                return;
+            }
+
+            // 1. GET DATA: Retrieve existing users from localStorage or create an empty array.
+            const aUsers = JSON.parse(localStorage.getItem("armoryxUsers") || "[]");
+
+            // Check if user already exists
+            if (aUsers.find(user => user.email === sEmail)) {
+                MessageBox.error("This email is already registered. Please use a different email or log in.");
+                return;
+            }
+
+            // 2. UPDATE DATA: Add the new user to the array.
+            aUsers.push({
+                email: sEmail,
+                password: sPassword // NOTE: Never store plain text passwords in a real app!
+            });
+
+            // 3. SAVE DATA: Save the updated user list back to localStorage.
+            localStorage.setItem("armoryxUsers", JSON.stringify(aUsers));
+
             MessageToast.show("Registration successful! Please log in.");
             this.onNavBack();
         },
 
+        /**
+         * Navigates back to the login page.
+         */
         onNavBack: function () {
             const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("RouteHome", {}, true); // "true" clears the browser history
+            oRouter.navTo("RouteHome", {}, true);
         }
     });
 });
