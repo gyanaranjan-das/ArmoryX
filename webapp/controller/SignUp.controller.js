@@ -44,6 +44,7 @@ sap.ui.define([
          * Handles the registration process when the user clicks "Register".
          */
         onRegister: function () {
+            const sUsername = this.byId("usernameInput").getValue; //get the username
             const sEmail = this.byId("emailInput").getValue();
             const sPassword = this.byId("passwordInput").getValue();
 

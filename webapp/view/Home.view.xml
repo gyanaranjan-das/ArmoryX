@@ -16,7 +16,7 @@
 
             <f:SimpleForm layout="ResponsiveGridLayout" editable="true" width="22rem">
                 <Label text="Username" required="true"/>
-                <Input id="usernameInput" placeholder="Enter your username..." liveChange=".onInputChange"/>
+                <Input id="usernameInput" placeholder="Enter your username or Email..." liveChange=".onInputChange"/>
 
                 <Label text="Password" required="true"/>
                 <Input id="passwordInput" type="Password" placeholder="Enter your password..." liveChange=".onInputChange"/>
@@ -30,7 +30,7 @@
                     type="Emphasized"
                     press=".onLogin"
                     class="sapUiLargeMarginTop"
-                    enabled="false"/>
+                    enabled="true"/>
             </f:SimpleForm>
 
             <VBox class="sapUiLargeMarginTop" alignItems="Center">

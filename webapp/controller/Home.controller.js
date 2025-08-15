@@ -11,15 +11,24 @@ sap.ui.define([
 ], function (Controller, MessageToast, MessageBox) {
     "use strict";
 
-    return Controller.extend("armoryx.controller.Home", {
+    return Controller.extend("armoryx.armoryx.controller.Home", {
 
         /**
          * Handles the login process when the user clicks "Login".
+         *  - if user exists, navigates to dashboard
+         *  - if user does not exist, navigates to the signup page
          */
         onLogin: function () {
             const sUsername = this.byId("usernameInput").getValue(); // Using email as username
             const sPassword = this.byId("passwordInput").getValue();
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("RouteDashboard");
 
+            //validate input - check if fields are empty
+            if (!sLoginInput || !sPassword) {
+              MessageToast.show("Please enter both username and password.");
+              return; // Stop the function here if validation fails
+          }
             // 1. GET DATA: Retrieve the list of users from localStorage.
             const aUsers = JSON.parse(localStorage.getItem("armoryxUsers") || "[]");
 
@@ -28,6 +37,7 @@ sap.ui.define([
 
             if (oUser) {
                 // 3. SUCCESS: If user is found, show a success popup and navigate.
+                MessageToast.show("Welcome back, " + oUser.username)
                 MessageBox.success("Login Successful!", {
                     title: "Welcome Back!",
                     onClose: () => {
@@ -39,6 +49,11 @@ sap.ui.define([
             } else {
                 // 4. FAILURE: If user is not found, show an error message.
                 MessageBox.error("Login Failed. Please check your username and password.");
+                MessageBox.information("User not found. Please create an account.", {
+                  onClose: () => {
+                    oRouter.navTo("RouteSignUp");
+                  }
+                });
             }
         },
 

@@ -1,39 +1,41 @@
 <mvc:View
-    controllerName = "armoryx.armoryx.controller.SignUp"
-    xmlns:mvc = "sap.ui.core.mvc"
+    controllerName="armoryx.armoryx.controller.SignUp"
+    xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:f = "sap.ui.layout.form">
-    
+    xmlns:f="sap.ui.layout.form">
     <Page title="Operator Registration" showNavButton="true" navButtonPress=".onNavBack">
-    <content>
-        <VBox class = "sapUiResponsiveMargin" justifyContent="Center" alignItems="Center">
-            <f:SimpleForm layout = "ResponsiveGridLayout" editable="true" width="22rem">
-                <Label text="Email Address" required="true"/>
-                <Input id = "emailInput" type="Email" placeholder="user@example.com"/>
+        <content>
+            <VBox class="sapUiResponsiveMargin" justifyContent="Center" alignItems="Center">
+                <f:SimpleForm layout="ResponsiveGridLayout" editable="true" width="22rem">
+                    <!-- NEW FIELD ADDED HERE -->
+                    <Label text="Username" required="true"/>
+                    <Input id="usernameInput" placeholder="e.g., Maverick1"/>
 
-                <Label text = "choose password" required="true"/>
-                <Input 
+                    <Label text="Email Address" required="true"/>
+                    <Input id="emailInput" type="Email" placeholder="user@example.com"/>
+
+                    <Label text="Choose Password" required="true"/>
+                    <Input
                         id="passwordInput"
                         type="Password"
                         placeholder="Minimum 8 characters"
                         liveChange=".onPasswordChange"/>
-                
-                <Label text="Confirm Password" required="true"/>
-                <Input 
-                    id = "confirmPasswordInput"
-                    type="Password"
-                    liveChange=".onPasswordChange"/>
-                
-                <Button
-                    id = "registerButton"
-                    text="Register"
-                    type = "Accept"
-                    press=".onRegister"
-                    class = "sapUiLargeMarginTop"
-                    enabled="false"/>
-            </f:SimpleForm>
-        
-        </VBox>
-    </content>
-    </Page>    
+
+                    <Label text="Confirm Password" required="true"/>
+                    <Input
+                        id="confirmPasswordInput"
+                        type="Password"
+                        liveChange=".onPasswordChange"/>
+
+                    <Button
+                        id="registerButton"
+                        text="Register"
+                        type="Accept"
+                        press=".onRegister"
+                        class="sapUiLargeMarginTop"
+                        enabled="false"/>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
 </mvc:View>
