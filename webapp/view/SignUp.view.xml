@@ -1,0 +1,56 @@
+<mvc:View
+    controllerName="armoryx.armoryx.controller.SignUp"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+    <Page title="Operator Registration" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <VBox
+                class="sapUiResponsiveMargin"
+                justifyContent="Center"
+                alignItems="Center"
+                height="100%">
+                <Panel width="25rem" class="sapUiResponsiveMargin">
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title text="Create Your Account"/>
+                        </Toolbar>
+                    </headerToolbar>
+                    <f:SimpleForm
+                        class="sapUiSmallMargin"
+                        layout="ResponsiveGridLayout"
+                        editable="true">
+
+                        <Label text="Username" required="true"/>
+                        <Input id="usernameInput" placeholder="e.g., Maverick1"/>
+
+                        <Label text="Email Address" required="true"/>
+                        <Input id="emailInput" type="Email" placeholder="user@example.com"/>
+
+                        <Label text="Choose Password" required="true"/>
+                        <Input
+                            id="passwordInput"
+                            type="Password"
+                            placeholder="Minimum 8 characters"
+                            liveChange=".onPasswordChange"/>
+
+                        <Label text="Confirm Password" required="true"/>
+                        <Input
+                            id="confirmPasswordInput"
+                            type="Password"
+                            liveChange=".onPasswordChange"/>
+                    </f:SimpleForm>
+                    <VBox class="sapUiSmallMargin">
+                        <Button
+                            id="registerButton"
+                            text="Register"
+                            type="Accept"
+                            press=".onRegister"
+                            enabled="false"
+                            width="100%"/>
+                    </VBox>
+                </Panel>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
