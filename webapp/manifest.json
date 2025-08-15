@@ -1,7 +1,7 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "armoryx",
+    "id": "armoryx.armoryx",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -70,45 +70,42 @@
         "viewType": "XML",
         "path": "armoryx.armoryx.view",
         "async": true,
-        "view": "armoryx.armoryx.view",
-        "clearControlAggregation": false
+        "view": "armoryx.armoryx.view"
       },
       "routes": [
         {
-          "name": "RouteHome",
-          "pattern": ":?query:",
-          "target": [
-            "TargetHome"
-          ]
+            "name": "RouteHome",
+            "pattern": "",
+            "target": ["TargetHome"]
         },
         {
-          "name": "RouteDashboard",
-          "pattern": "dashboard",
-          "target":["TargetDashboard"]
-        },
-        {
-          "name": "RouteSignUp",
+          "name": "RouteSignup",
           "pattern": "signup",
           "target":["TargetSignUp"]
-        }
-      ],
-      "targets": {
-        "TargetHome": {
-          "viewName": "Home",
-          "viewId": "home",
-          "viewLevel":1
         },
-        "TargetDashboard":{
-          "viewName": "Dashboard",
-          "viewId": "dashboard",
-          "viewLevel":2
+        {
+            "name": "RouteDashboard",
+            "pattern": "dashboard",
+            "target": ["TargetDashboard"]
+        }
+    ],
+    "targets": {
+        "TargetHome": {
+            "viewName": "Home",
+            "viewId": "home",
+            "viewLevel": 1
+        },
+        "TargetDashboard": {
+            "viewName": "Dashboard",
+            "viewId": "dashboard",
+            "viewLevel": 2
         },
         "TargetSignUp":{
-          "viewName": "SignUp",
           "viewId": "signUp",
+          "viewName": "SignUp",
           "viewLevel":2
         }
-      }
+    }
     },
     "rootView": {
       "viewName": "armoryx.armoryx.view.App",

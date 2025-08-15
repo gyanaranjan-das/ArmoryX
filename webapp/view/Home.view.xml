@@ -3,7 +3,6 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns="sap.m"
-    xmlns:l="sap.ui.layout"
     xmlns:f="sap.ui.layout.form">
     <Page showHeader="false" class="sapUiContentPadding">
         <VBox
@@ -11,32 +10,53 @@
             justifyContent="Center"
             alignItems="Center"
             height="100%">
-            <core:Icon src="sap-icon://shield" size="3rem" class="sapUiMediumMarginBottom" color="#346187"/>
-            <Title text="ArmoryX Operator Login" titleStyle="H2" class="sapUiMediumMarginBottom"/>
+            <Panel width="25rem" class="sapUiResponsiveMargin">
+                <VBox class="sapUiSmallMargin" alignItems="Center">
+                    <core:Icon src="sap-icon://shield" size="3rem" class="sapUiMediumMarginBottom" color="sapUiBrandColor"/>
+                    <Title text="Sign in" titleStyle="H2"/>
+                    <Text text="to continue to ArmoryX"/>
+                </VBox>
 
-            <f:SimpleForm layout="ResponsiveGridLayout" editable="true" width="22rem">
-                <Label text="Username" required="true"/>
-                <Input id="usernameInput" placeholder="Enter your username or Email..." liveChange=".onInputChange"/>
+                <f:SimpleForm
+                    class="sapUiSmallMarginTop"
+                    layout="ResponsiveGridLayout"
+                    editable="true">
+                    <Label text="Username or Email"/>
+                    <Input id="loginInput" placeholder="Enter your credentials..."/>
+                    <Label text="Password"/>
+                    <Input id="passwordInput" type="Password"/>
+                    <CheckBox id="rememberMeCheckbox" text="Remember Me"/>
+                    <Link text="Forgot Password?" press=".onForgotPassword" textAlign="End"/>
+                </f:SimpleForm>
 
-                <Label text="Password" required="true"/>
-                <Input id="passwordInput" type="Password" placeholder="Enter your password..." liveChange=".onInputChange"/>
-
-                <CheckBox id="rememberMeCheckbox" text="Remember Me" class="sapUiSmallMarginTop"/>
-                <Link text="Forgot Password?" press=".onForgotPassword" class="sapUiSmallMarginTop" textAlign="End"/>
-
-                <Button
-                    id="loginButton"
-                    text="Login"
-                    type="Emphasized"
-                    press=".onLogin"
-                    class="sapUiLargeMarginTop"
-                    enabled="true"/>
-            </f:SimpleForm>
-
-            <VBox class="sapUiLargeMarginTop" alignItems="Center">
-                 <Text text="Don't have an account?"/>
-                 <Button text="Sign Up Now" type="Transparent" press=".onNavToSignUp"/>
-            </VBox>
+                <VBox class="sapUiSmallMargin">
+                    <Button text="Sign In" type="Emphasized" press=".onLogin" width="100%"/>
+                    <Text text="or sign in with" class="sapUiTinyMarginTop sapUiTinyMarginBottom" textAlign="Center"/>
+                    
+                    <!-- NEW: Using Image controls for social logos -->
+                    <HBox justifyContent="Center" width="100%">
+                        <Image
+                            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                            height="32px"
+                            class="sapUiTinyMarginEnd social-login-icon"
+                            press=".onGoogleLogin"
+                            tooltip="Sign in with Google"/>
+                             <core:HTML
+        content='&lt;div id="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="outline" data-text="signin_with" data-size="large" data-logo_alignment="left"&gt;&lt;/div&gt;'>
+    </core:HTML>
+                        <Image
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                            height="32px"
+                            class="social-login-icon"
+                            press=".onGitHubLogin"
+                            tooltip="Sign in with GitHub"/>
+                    </HBox>
+                </VBox>
+                 <HBox class="sapUiSmallMargin" justifyContent="Center">
+                    <Text text="Don't have an account?"/>
+                    <Link text="Create one" press=".onNavToSignUp" class="sapUiTinyMarginBegin"/>
+                </HBox>
+            </Panel>
         </VBox>
     </Page>
 </mvc:View>

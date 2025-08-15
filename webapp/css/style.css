@@ -1,1 +1,9 @@
 /* Enter your custom styles here */
+.social-login-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-login-icon:hover {
+    transform: scale(1.1);
+}
